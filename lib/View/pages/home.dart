@@ -2,7 +2,7 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:ww/View/pages/login.dart'; // Ensure your Login screen is imported
+import 'package:ww/View/pages/login.dart'; 
 
 class HomeScreen extends StatefulWidget {
 
@@ -20,7 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
     try {
       await FirebaseAuth.instance.signOut();
 
-      // After sign-out, navigate to the login screen
+ 
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const Login()), 
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Text("Welcome, ${user!.email}"),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => signout(context), // Call sign-out method
+        onPressed: () => signout(context), 
         child: const Icon(Icons.logout),
       ),
     );
