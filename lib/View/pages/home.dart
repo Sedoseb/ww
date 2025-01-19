@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // Check if the user is signed in
+   
     if (user == null) {
       return Scaffold(
         body: Center(
