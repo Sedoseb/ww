@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:ww/View/pages/home.dart';
 import 'package:ww/View/pages/login.dart';
-// Ensure SplashScreen class is defined properly
 
 class Wrapper extends StatefulWidget {
   const Wrapper({super.key});
